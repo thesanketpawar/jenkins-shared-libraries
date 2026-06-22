@@ -1,4 +1,3 @@
-def call(String repoUrl, String branchName) {
-    echo "📥 Shared Library: Cloning repo from branch: ${branchName}"
-    git url: repoUrl, branch: branchName
+def call(String url, String branch) {
+    git url: "${url}", branch: "${branch}"
 }
