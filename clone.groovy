@@ -1,4 +1,4 @@
-def cal(String url, String branch) {
-  echo 'This is for cloning code'
-  git url: "${url}", branch: "${branch}"
+def call(String repoUrl, String branchName) {
+    echo "📥 Shared Library: Cloning repo from branch: ${branchName}"
+    git url: repoUrl, branch: branchName
 }
